@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
 
+  respond_to :html, :json
+
   def show
     @post = Post.find(params[:id])
   end
@@ -7,9 +9,8 @@ class PostsController < ApplicationController
   def create
     # @post = Post.create(params[:post])
     @post = Post.new(params[:post])
-    if @post.save
-    end
-    redirect_to categories_path
+    @post.save
+    respond_with(@post)
   end
 
   def edit

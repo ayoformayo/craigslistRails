@@ -1,10 +1,10 @@
 body {
-  background: blue;
-  a {
-    color: yellow;
-    font-size: large;
-    &:hover {
-      color: green;
-    }
-  }
+}
+nav {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+}
+.wrapper {
+  padding-top: 50px;
 }
