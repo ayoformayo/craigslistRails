@@ -1,4 +1,4 @@
-<%= form_for @post do |f| %>
+<%= form_for @post, :html => {:id => "post_form"} do |f| %>
    <%= label_tag 'title' %> <br>
    <%= f.text_field :title %> <br>
    <%= label_tag 'category_id' %> <br>
