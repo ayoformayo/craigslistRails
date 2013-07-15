@@ -1,0 +1,4 @@
+<%= [@post.title,@post.price,@post.email].join(" | ") %> <br>
+<%= @post.description %> <%= link_to 'Delete', post_path(@post), :method => "delete" %>
+<%= link_to "Update", edit_post_path(@post) %>
+
